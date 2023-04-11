@@ -9,7 +9,8 @@ connectDB();
 
 app.use(express.json());
 
-app.use("/api/contacts", require("./routes/contactRoutes")); //MiddleWares
+app.use("/api/contacts", require("./routes/contactRoutes")); //MiddleWares-1
+app.use("/api/users", require("./routes/userRoutes")); //MiddleWares-2
 app.use(errorHandler);
 
 app.listen(port, () => {
